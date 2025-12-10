@@ -42,38 +42,63 @@
   }
 
   /* Custom range slider styles */
+  input[type='range'].slider {
+    @apply relative;
+  }
+
   input[type='range'].slider::-webkit-slider-thumb {
     appearance: none;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    @apply bg-primary-500 cursor-pointer;
-    transition: all 0.2s ease;
+    @apply bg-white border-2 border-primary-500 cursor-pointer shadow-lg;
+    transition: all 0.3s ease;
   }
 
   input[type='range'].slider::-webkit-slider-thumb:hover {
-    @apply bg-primary-600 scale-110;
+    @apply border-primary-600 scale-125 shadow-xl;
+    box-shadow: 0 0 0 8px rgba(14, 165, 233, 0.1);
+  }
+
+  input[type='range'].slider::-webkit-slider-thumb:active {
+    @apply scale-110;
+    box-shadow: 0 0 0 12px rgba(14, 165, 233, 0.2);
   }
 
   input[type='range'].slider::-webkit-slider-thumb:focus {
-    @apply ring-2 ring-primary-500 ring-offset-2;
+    @apply ring-4 ring-primary-400 ring-opacity-50;
   }
 
   input[type='range'].slider::-moz-range-thumb {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    border: none;
-    @apply bg-primary-500 cursor-pointer;
-    transition: all 0.2s ease;
+    border: 2px solid;
+    @apply bg-white border-primary-500 cursor-pointer shadow-lg;
+    transition: all 0.3s ease;
   }
 
   input[type='range'].slider::-moz-range-thumb:hover {
-    @apply bg-primary-600 scale-110;
+    @apply border-primary-600 scale-125 shadow-xl;
+    box-shadow: 0 0 0 8px rgba(14, 165, 233, 0.1);
+  }
+
+  input[type='range'].slider::-moz-range-thumb:active {
+    @apply scale-110;
+    box-shadow: 0 0 0 12px rgba(14, 165, 233, 0.2);
   }
 
   input[type='range'].slider::-moz-range-thumb:focus {
-    @apply ring-2 ring-primary-500 ring-offset-2;
+    @apply ring-4 ring-primary-400 ring-opacity-50;
+  }
+
+  /* Glassmorphism utilities */
+  .glass {
+    @apply backdrop-blur-xl bg-white/30 dark:bg-gray-900/30;
+  }
+
+  .glass-strong {
+    @apply backdrop-blur-2xl bg-white/70 dark:bg-gray-900/70;
   }
 }
 

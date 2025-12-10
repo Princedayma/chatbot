@@ -199,10 +199,3 @@ The app uses a professional blue primary color scheme:
 - Streaming responses
 - Code syntax highlighting
 
-## 📄 License
-
-This project is open source and available for personal and commercial use.
-
----
-
-Built with ❤️ using Next.js, TypeScript, and Tailwind CSS
