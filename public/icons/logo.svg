@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#gradient)" opacity="0.1"/>
+  
+  <!-- Main Icon - Chat Bubble with AI Symbol -->
+  <g transform="translate(256, 256)">
+    <!-- Chat Bubble -->
+    <path d="M -80 -60 Q -80 -100, -40 -100 L 40 -100 Q 80 -100, 80 -60 L 80 20 Q 80 60, 40 60 L -20 60 L -60 100 L -60 60 L -40 60 Q -80 60, -80 20 Z" 
+          fill="url(#gradient)" opacity="0.9"/>
+    
+    <!-- AI Sparkle Symbol -->
+    <circle cx="0" cy="-20" r="8" fill="white"/>
+    <path d="M 0 -40 L 3 -25 L 0 -10 L -3 -25 Z" fill="white"/>
+    <path d="M -20 -20 L -5 -17 L 10 -20 L -5 -23 Z" fill="white"/>
+    
+    <!-- Message Lines -->
+    <rect x="-40" y="0" width="80" height="6" rx="3" fill="white" opacity="0.7"/>
+    <rect x="-40" y="15" width="60" height="6" rx="3" fill="white" opacity="0.5"/>
+  </g>
+</svg>
